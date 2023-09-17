@@ -1,0 +1,53 @@
+        /* Стиль для першого рядка таблиці */
+        tr:first-child {
+            background-color: #778f8f; 
+            color: #000000; /* Контрастний колір тексту */
+        }
+
+        /* Стиль для другого рядка таблиці */
+        tr:nth-child(2) {
+            background-color: #f5f577; 
+            color: #000000; /* Контрастний колір тексту */
+        }
+
+        /* Загальний стиль для таблиці */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* Стиль для всіх комірок у таблиці */
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+                /* Зміна кольору тексту при наведенні на 1-й і 2-й рядки */
+                tr:first-child:hover, tr:nth-child(2):hover {
+            background-color: #1E2FF7; /* Змінюємо фон */
+            color: #F5E245; /* Змінюємо колір тексту на контрастний */
+        }
+        /* Стиль для контейнера зображення */
+        .image-container {
+            display: flex;
+            
+        }
+
+        .position-image {
+            position: relative; 
+            margin: 10px;
+
+        }
+
+        /* Стиль для зображення за допомогою position */
+        .position-image img {
+            width: 100%; /* Розтягнути зображення на всю ширину блоку */
+        }
+
+
+        .transform-image  {
+            margin: 10px;
+            transform: scale(1); 
+        }
+        .transform-image img {
+            width: 100%; /* Розтягнути зображення на всю ширину блоку */
+        }
