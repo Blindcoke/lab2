@@ -26,28 +26,144 @@
             background-color: #1E2FF7; /* Змінюємо фон */
             color: #F5E245; /* Змінюємо колір тексту на контрастний */
         }
-        /* Стиль для контейнера зображення */
-        .image-container {
+
+        .container {
             display: flex;
-            
-        }
-
-        .position-image {
-            position: relative; 
-            margin: 10px;
 
         }
 
-        /* Стиль для зображення за допомогою position */
-        .position-image img {
-            width: 100%; /* Розтягнути зображення на всю ширину блоку */
+        .clock1 {
+            margin: 10px; /* Невеликий простір між годинниками */
+            width: 100px;
+            height: 100px;
+            background-color: #E6E6E6;
+            border: 2px solid #000;
+            border-radius: 10%;
+            position: relative;
         }
 
 
-        .transform-image  {
-            margin: 10px;
-            transform: scale(1); 
+        .dot1 {
+            position: absolute;
+            border: 1px solid #000;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            top: 45%;
+            left: 5%;
         }
-        .transform-image img {
-            width: 100%; /* Розтягнути зображення на всю ширину блоку */
+        .dot2 {
+            position: absolute;
+            border: 1px solid #000;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            top: 5%;
+            left: 45%;
+
+        }
+        .dot3 {
+            position: absolute;
+            border: 1px solid #000;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            top: 46%;
+            left: 85%;
+
+        }
+        .dot4 {
+            position: absolute;
+            border: 1px solid #000;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            top: 85%;
+            left: 45%;
+
+        }
+        .hour {
+            rotate: 90deg;
+            position: absolute;
+            width: 46%;
+            height: 2px;
+            background-color: #000;
+            top: 32%;
+            left: 27%;
+
+        }
+
+        .minute {
+            rotate: 180deg;
+            position: absolute;
+            width: 46%;
+            height: 2px;
+            background-color: #000;
+            top: 50%;
+            left: 45%;
+        }
+
+        .clock2 {
+            margin: 10px; /* Невеликий простір між годинниками */
+            width: 100px;
+            height: 100px;
+            background-color: #E6E6E6;
+            border: 2px solid #000;
+            border-radius: 10%;
+        }
+
+
+
+        .d1 {
+            border: 1px solid #000;
+            transform: translate(30%, 450%);
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .d2 {
+            border: 1px solid #000;
+            transform: translate(770%, 340%);
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .d3 {
+            border: 1px solid #000;
+            transform: translate(400%, -140%);
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .d4 {
+            border: 1px solid #000;
+            transform: translate(400%, 470%);
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .h {
+            width: 46%;
+            height: 2px;
+            background-color: #000;
+            transform: rotate(90deg) translateX(-20%) translateY(-1350%);
+        }
+
+        .m{
+            width: 46%;
+            height: 2px;
+            background-color: #000;
+            transform: rotate(180deg) translateX(-98%) translateY(-350%);
         }
